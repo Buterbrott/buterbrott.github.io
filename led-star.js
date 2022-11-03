@@ -3,10 +3,11 @@ const
   svg = document.getElementById('led-star'),
   NS = svg.getAttribute('xlmns');
 
-const circle = document.createElementNS(NS, 'circle');
+const circle = document.createElementNS(NS, 'ellipse');
 circle.setAttribute('cx', parseFloat(pixels[0].getAttributeNS(null,'x')));
 circle.setAttribute('cy', parseFloat(pixels[0].getAttributeNS(null,'y')));
-circle.setAttribute('r', 10);
+circle.setAttribute('rx', 10);
+circle.setAttribute('ry', 10);
 
 svg.appendChild(circle);
 
