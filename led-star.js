@@ -4,9 +4,9 @@ const
   NS = svg.getAttribute('xlmns');
 
 const circle = document.createElementNS(NS, 'circle');
-circle.setAttribute('cx', parseFloat(pixels[0].getAttributeNS(null,'x')));
-circle.setAttribute('cy', parseFloat(pixels[0].getAttributeNS(null,'y')));
-circle.setAttribute('r', 1);
+circle.setAttribute('cx', parseFloat(pixels[0].getAttributeNS(null,'x'))+parseFloat(pixels[0].getAttributeNS(null,'width'))/2);
+circle.setAttribute('cy', parseFloat(pixels[0].getAttributeNS(null,'y'))+parseFloat(pixels[0].getAttributeNS(null,'height'))/2);
+circle.setAttribute('r', 4);
 
 svg.appendChild(circle);
 
