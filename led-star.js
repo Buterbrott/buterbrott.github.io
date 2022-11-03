@@ -1,7 +1,7 @@
 const pixels = Array.from(document.querySelectorAll('rect'));
 const 
   svg = document.getElementById('led-star'),
-  ns = svg.getAttribute('xlmns');
+  NS = svg.getAttribute('xlmns');
 
 const circle = document.createElementNS(NS, 'circle');
 circle.setAttribute('cx', parseFloat(pixels[0].getAttributeNS(null,'x')));
