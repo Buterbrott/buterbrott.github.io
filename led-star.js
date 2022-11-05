@@ -3,12 +3,11 @@ const
   svg = document.getElementById('led-star'),
   NS = svg.getAttribute('xlmns');
 
-const circle = document.createElementNS(NS, 'circle');
-circle.setAttribute('cx', parseFloat(pixels[0].getAttributeNS(null,'x'))+parseFloat(pixels[0].getAttributeNS(null,'width'))/2);
-circle.setAttribute('cy', parseFloat(pixels[0].getAttributeNS(null,'y'))+parseFloat(pixels[0].getAttributeNS(null,'height'))/2);
-circle.setAttribute('r', 4);
-
-svg.appendChild(circle);
+//const circle = document.createElementNS(NS, 'circle');
+//circle.setAttribute('cx', parseFloat(pixels[0].getAttributeNS(null,'x'))+parseFloat(pixels[0].getAttributeNS(null,'width'))/2);
+//circle.setAttribute('cy', parseFloat(pixels[0].getAttributeNS(null,'y'))+parseFloat(pixels[0].getAttributeNS(null,'height'))/2);
+//circle.setAttribute('r', 4);
+//svg.appendChild(circle);
 
 // Workaround for a Wokwi sometimes missing the first message
 let listener = setInterval(() => {
