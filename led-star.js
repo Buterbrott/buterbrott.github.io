@@ -35,10 +35,10 @@ window.addEventListener('message', ({ data }) => {
     }
   });
 
-window.addEventListener("load", (event) => {
-  for (let i = 0; i < 180; i++) {
-        if (pixels[i]) {
-          pixels[i].setAttribute('fill', 'rgb(255,0,0)');
-        }
-      }
-});
+// window.addEventListener("load", (event) => {
+//   for (let i = 0; i < 180; i++) {
+//         if (pixels[i]) {
+//           pixels[i].setAttribute('fill', 'rgb(255,0,0)');
+//         }
+//       }
+// });
