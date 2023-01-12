@@ -1,6 +1,4 @@
-const pixels = Array.from(document.querySelectorAll('polygon'));
-pixels.shift();
-
+const pixels = Array.from(document.querySelectorAll('rect'));
 const 
   svg = document.getElementById('led-star'),
   NS = svg.getAttribute('xlmns');
