@@ -1,15 +1,18 @@
 
-const a = document.getElementById("hexgrid");
-const svgDoc = a.contentDocument.getElementById("layout");
-var svg = SVG(svgDoc);
+
 var leds = [];
 
-svg.each(function(i, children) {
-  if ( this.data('mapped') === undefined ){
-  } else {
-      leds[this.data('mapped')] = this;
-  }
-},true);
+window.onload = function() { 
+  let a = document.getElementById("hexgrid");
+  let svgDoc = a.contentDocument.getElementById("layout");
+  let svg = SVG(svgDoc);
+  svg.each(function(i, children) {
+    if ( this.data('mapped') === undefined ){
+    } else {
+        leds[this.data('mapped')] = this;
+    }
+  },true);
+}
 
 let listener = setInterval(() => {
     parent.postMessage({ app: 'wokwi', command: 'listen', version: 1 }, 'https://wokwi.com');
